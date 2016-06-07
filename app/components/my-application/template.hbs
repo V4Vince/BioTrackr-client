@@ -5,7 +5,7 @@
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
-        <li>{{#link-to "users"}}Users{{/link-to}}</li>
+        <li>{{#link-to "record"}}Your Record{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -21,7 +21,7 @@
   </div>
 </nav>
 
-<h1>Welcome to Ember!</h1>
+{{#link-to 'new-entry'}}New{{/link-to}}
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}

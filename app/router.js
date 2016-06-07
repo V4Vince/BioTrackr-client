@@ -11,8 +11,8 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('record');
-  this.route('record-entry');
-  this.route('new-entry');
+  this.route('record-entry', { path: '/record/:entry_id' });
+  this.route('new-entry', { path: '/record/new' });
 });
 
 export default Router;

@@ -1,1 +1,31 @@
+{{!-- {{symptom-input symptom=entryParams.symptom}}
+{{date-input date=entryParams.date}}
+{{details-input details=entryParams.details}} --}}
+
+<label for="kind">New Entry</label>
+{{input type="symptom"
+        id="symptom"
+        placeholder="Symptom"
+        value=entryParams.symptom}}
+
+{{input type="date"
+        id="date"
+        placeholder="Date"
+        value=entryParams.date}}
+
+{{input type="details"
+        id="details"
+        placeholder="Details"
+        value=entryParams.details}}
+
+<button type="submit" class="btn btn-primary" {{action "submit"}}>
+  submit
+</button>
+
+<button class="btn btn-default" {{action "reset"}}>
+  Cancel
+</button>
+
+
+
 {{yield}}

@@ -1,1 +1,10 @@
-{{outlet}}
+<h2>Your Record</h2>
+
+{{!-- <ul>
+{{#each model as |record|}}
+  <li>{{record.symptom}}</li>
+{{/each}}
+</ul>
+{{outlet}} --}}
+
+{{biotrackr-record records=model}}

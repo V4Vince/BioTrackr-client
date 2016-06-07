@@ -1,1 +1,10 @@
+{{#each records as |entry|}}
+{{!--'record-entry' is the path, entry is the sepcific item--}}
+<ul>
+  {{#link-to 'record-entry' entry}}
+    <li>{{entry.symptom}}</li>
+  {{/link-to}}
+</ul>
+{{/each}}
+
 {{yield}}
