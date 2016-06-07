@@ -1,13 +1,23 @@
-<h5>Date:</h5>
-<h3>{{single-entry.date}}</h3>
+<div class="record-details">
+<hr>
 
-<h5>Symptom:</h5>
-<h3>{{single-entry.symptom}}</h3>
+<div class="date">
+  <h5>Date:</h5>
+  <h3>{{single-entry.date}}</h3>
+</div>
 
-<h5>More Details:</h5>
-<h3>{{single-entry.details}}</h3>
+<div class="symptom">
+  <h5>Symptom:</h5>
+  <h3>{{single-entry.symptom}}</h3>
+</div>
 
-<button class="btn btn-lg btn-danger" type="button" name="button" {{action "delete" on="click"}}>Delete</button>
+<div class="details">
+  <h5>More Details:</h5>
+  <h3>{{single-entry.details}}</h3>
+</div>
 
+
+<button class="delete-entry-button btn btn-lg btn-danger" type="button" name="button" {{action "delete" on="click"}}>X</button>
+</div>
 
 {{yield}}

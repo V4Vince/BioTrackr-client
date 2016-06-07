@@ -1,5 +1,29 @@
 $blue-600: #1E88E5;
+$blue-800: #1565C0;
+$green-500: #4CAF50;
 
 div#index-welcome{
   background-color: $blue-600;
+}
+.record-list {
+  div.show-record-pills {
+    background-color: $blue-600;
+  }
+  div.show-record-pills:hover{
+    background-color: $blue-800;
+  }
+  li {
+    color: white;
+  }
+}
+.new-entry-button{
+  background-color: $green-500;
+}
+
+.record-details{
+  .date h5,
+  .symptom h5,
+  .details h5 {
+    background-color: $blue-600;
+  }
 }

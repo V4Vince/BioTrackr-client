@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav id="main-navbar" class="navbar navbar-inverse">
   <div class="container-fluid">
     {{navbar-header}}
 
@@ -21,7 +21,9 @@
   </div>
 </nav>
 
-{{#link-to 'new-entry'}}New{{/link-to}}
+{{#if isAuthenticated}}
+    {{#link-to 'new-entry'}}<div class="new-entry-button"><p>Add</p></div>{{/link-to}}
+{{/if}}
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}

@@ -1,0 +1,26 @@
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+.record-list {
+  li {
+    font-size: 1.2em;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+.new-entry-button{
+  p{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+  }
+}
+.your-record{
+  font-weight: bold;
+}
