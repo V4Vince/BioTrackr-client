@@ -25,5 +25,24 @@ div#index-welcome{
   .symptom h5,
   .details h5 {
     background-color: $blue-600;
+    color: white;
   }
+}
+
+nav#main-navbar{
+  background-color: $blue-600;
+  #navigation li a{
+    color: white;
+  }
+  a:hover,
+  a:visited
+  a:active{
+    background-color: transparent;
+  }
+}
+
+div#welcome-index
+  h2,
+  h4{
+  color: white;
 }

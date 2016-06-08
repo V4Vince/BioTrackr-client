@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'form',
-  classNames: [''],
+  // classNames: ['new-entry-inputs'],
 
   entryParams: {},
 
@@ -10,7 +10,6 @@ export default Ember.Component.extend({
     submit () {
       this.sendAction('submit', this.get('entryParams'));
     },
-
     reset () {
       this.set('entryParams', {});
     },
