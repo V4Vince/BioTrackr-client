@@ -1,4 +1,10 @@
+<div class="record-flash-message">
+{{#each flashMessages.queue as |flash|}}
+  {{flash-message flash=flash}}
+{{/each}}
+</div>
 <h2 class="your-record">Your Record</h2>
+
 <hr>
 {{!-- <ul>
 {{#each model as |record|}}

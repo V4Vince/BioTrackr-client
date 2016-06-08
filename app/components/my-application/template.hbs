@@ -21,11 +21,7 @@
   </div>
 </nav>
 
-{{#each flashMessages.queue as |flash|}}
-  {{flash-message flash=flash}}
-{{/each}}
-
-<div class="col-md-8 col-md-offset-2">
+<div class="my-application-outlet col-md-8 col-md-offset-2">
   {{outlet}}
 </div>
 
