@@ -16,6 +16,11 @@ export default Ember.Route.extend({
       .then(() => {
         this.get('flashMessages').success('You\'ve deleted an entry.');
       });
-    }
+    },
+    // patch(data){
+    //   let newDetails = this.get('store').set('single-entry', data);
+    //   console.log(newDetails);
+    //   return newDetails.save();
+    // },
   },
 });

@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('record');
   this.route('record-entry', { path: '/record/:entry_id' });
   this.route('new-entry', { path: '/record/new' });
+  this.route('edit');
 });
 
 export default Router;
