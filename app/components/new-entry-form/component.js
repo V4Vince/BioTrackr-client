@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'form',
-  // classNames: ['new-entry-inputs'],
   //submit <-invisible
   entryParams: {},
 
