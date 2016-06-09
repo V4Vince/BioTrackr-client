@@ -1,15 +1,19 @@
-$blue-600: #1E88E5;
+$main-green600: #00897B;
 $blue-800: #1565C0;
 $green-500: #4CAF50;
+$soft-gray: #F5F5F5;
+$secondary-green700: #00796B;
 
-
+body.ember-application{
+  background-color: $soft-gray;
+}
 
 div#index-welcome{
-  background-color: $blue-600;
+  background-color: $main-green600;
 }
 .record-list {
   div.show-record-pills {
-    background-color: $blue-600;
+    background-color: $main-green600;
   }
   div.show-record-pills:hover{
     background-color: $blue-800;
@@ -26,13 +30,13 @@ div#index-welcome{
   .date h5,
   .symptom h5,
   .details h5 {
-    background-color: $blue-600;
+    background-color: $main-green600;
     color: white;
   }
 }
 
 nav#main-navbar{
-  background-color: $blue-600;
+  background-color: $main-green600;
   #navigation li a{
     color: white;
   }

@@ -13,15 +13,18 @@ li{
     font-size: 1.2em;
   }
   li:hover,
-  li:visited {
+  li:visited,
+  li:clicked {
     text-decoration: none;
   }
 }
 .new-entry-button{
-  p{
+  .add-button-icon{
+    top: 5px;
+    margin: 0 auto;
     color: white;
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 .your-record{

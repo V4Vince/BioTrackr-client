@@ -5,13 +5,32 @@ html{
   margin: 0;
 }
 
+
+
+#index-welcome{
+  margin: 50px 10px;
+}
+
+#main-navbar{
+  height: 80px;
+  #navigation{
+    margin-top: 20px;
+  }
+}
+
+nav#main-navbar{
+  width: 100%;
+  border-radius: 0;
+  box-shadow: 0px 1px 5px #888888;
+}
+
 .center{
   text-align: center;
 }
 .full-size-buttons{
-  margin-top: 25px;
-  height: 45px;
-  width: 80%;
+  margin-top: 20px;
+  height: 35px;
+  width: 60%;
   border-radius: 15px;
 }
 
@@ -26,21 +45,23 @@ html{
   }
   div.show-record-page{
     padding-bottom: 150px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
-
-.new-entry-button{
+.new-entry-button-container{
   position: fixed;
-  padding-top: 20px;
-  border-radius: 25px;
-  left: 5%;
   bottom: 50px;
-  z-index: 5;
-  width: 90%;
-  height: 60px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.2), 0px 5px 6px
+  right: 30px;
+  .new-entry-button{
+    padding-top: 10px;
+    position: relative;;
+    border-radius: 100%;
+    z-index: 5;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0px 1px 5px #888888;
+  }
 }
 
 .record-details{
@@ -68,18 +89,6 @@ html{
   width: 45px;
 }
 
-nav#main-navbar{
-  width: 100%;
-  border-radius: 0;
-  box-shadow: 0 0px 0px rgba(0,0,0,0.2), 0px 5px 6px
-}
-
-input#symptom,
-input#date,
-input#details{
-  margin-bottom: 1px;
-}
-
 .app-name{
   color: white;
 }
@@ -91,4 +100,31 @@ input#details{
 .record-flash-message{
   position: fixed;
   width: 100%;
+}
+
+.input-fields,
+.form-control{
+  margin: 0px auto;
+  width: 80%;
+}
+.ember-view.ember-text-field{
+  height: 50px;
+}
+
+@media (min-width: 850px){
+  .record-list {
+    div.show-record-pills {
+      border-radius: 5px;
+      margin: 10px auto;
+      height: 200px;
+      width: 200px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    div.show-record-page{
+      padding-bottom: 150px;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
 }
