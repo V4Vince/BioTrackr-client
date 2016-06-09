@@ -8,11 +8,11 @@ export default Ember.Route.extend({
     signIn (credentials) {
       console.log(credentials);
       return this.get('auth').signIn(credentials)
-      .then(() => this.transitionTo('application'))
-      .then(() => this.get('flashMessages').success('Thanks for signing in!'))
+      .then(() => this.transitionTo('record'))
+      .then(() => this.get('flashMessages').success('Hi there!'))
       .catch(() => {
         this.get('flashMessages')
-        .danger('There was a problem. Please try again.');
+        .danger('Looks like somthing went wrong');
       });
     },
   },

@@ -7,3 +7,8 @@
 <h2 class="your-record">Your Record</h2>
 <hr>
 {{biotrackr-record records=model}}
+
+
+{{#if isAuthenticated}}
+    {{add-button}}
+{{/if}}

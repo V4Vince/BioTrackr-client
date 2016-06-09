@@ -1,7 +1,6 @@
 <nav id="main-navbar" class=" nav navbar">
   <div class="container-fluid">
     {{navbar-header}}
-
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
@@ -20,13 +19,11 @@
     </div>
   </div>
 </nav>
-
-<div class="my-application-outlet col-md-8 col-md-offset-2">
+{{!-- my-application-outlet col-md-8 col-md-offset-2 --}}
+<div class="my-application-outlet">
   {{outlet}}
-</div>
 
-<div class="new-entry-button-container container">
-{{#if isAuthenticated}}
-    {{#link-to 'new-entry'}}<div class="new-entry-button"><p>Add</p></div>{{/link-to}}
-{{/if}}
+  {{#if isAuthenticated}}
+      {{add-button}}
+  {{/if}}
 </div>
