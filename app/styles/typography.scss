@@ -12,7 +12,8 @@ li{
   li {
     font-size: 1.2em;
   }
-  a:hover {
+  li:hover,
+  li:visited {
     text-decoration: none;
   }
 }
