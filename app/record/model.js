@@ -4,9 +4,6 @@ import attr from 'ember-data/attr';
 
 export default Model.extend({
   symptom: attr('string'),
-  date: attr('date'),
+  date: attr('string'),
   details: attr('string'),
-
-
-
 });

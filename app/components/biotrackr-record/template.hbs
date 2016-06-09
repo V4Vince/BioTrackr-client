@@ -1,9 +1,10 @@
 <div class="show-record-page">
 {{#each records as |entry|}}
-{{!--'record-entry' is the path, entry is the sepcific item--}}
 
   {{#link-to 'record-entry' entry}}
-    <div class="show-record-pills"><li>{{entry.symptom}}</li></div>
+    <div class="show-record-pills">
+      <li>{{entry.symptom}}</li>
+    </div>
   {{/link-to}}
 
 {{/each}}

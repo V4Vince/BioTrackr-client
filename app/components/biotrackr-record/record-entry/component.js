@@ -5,6 +5,7 @@ export default Ember.Component.extend({
     delete(){
       let entry = this.get('single-entry');
       this.sendAction('submit', entry);
+      console.log(entry);
     },
   },
 });
