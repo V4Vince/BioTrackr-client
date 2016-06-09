@@ -2,6 +2,8 @@ $blue-600: #1E88E5;
 $blue-800: #1565C0;
 $green-500: #4CAF50;
 
+
+
 div#index-welcome{
   background-color: $blue-600;
 }
@@ -45,4 +47,10 @@ div#welcome-index
   h2,
   h4{
   color: white;
+}
+
+
+
+#index{
+  background-color: black;
 }

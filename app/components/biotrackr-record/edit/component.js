@@ -10,11 +10,13 @@ export default Ember.Component.extend({
     //   this.sendAction('change', update);
     // },
     submit(){
-      let id = this.get('single-entry.id');
+      let id = this.get('entry.id');
+      let entry = this.get('entry');
+      console.log(entry);
       console.log("this is the ID from edit" + id);
       let store = this.get('store');
 
-      store.findRecord('single-entry', id)
+      store.findRecord('entry', id)
       .then((record) => {
         record.set('details', store.get('patchParams'));
         return record;
