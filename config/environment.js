@@ -40,7 +40,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.API_HOST = 'https://mysterious-falls-32517.herokuapp.com';
+    ENV.baseURL = '/';
+    ENV.locationType = 'hash';
   }
 
   return ENV;

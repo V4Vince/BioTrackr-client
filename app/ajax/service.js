@@ -1,8 +1,10 @@
 import Ember from 'ember';
 import AjaxService from 'ember-ajax/services/ajax';
+import ENV from 'biotrackr-ember-client/config/environment';
 
 export default AjaxService.extend({
   auth: Ember.inject.service(),
+  host: ENV.API_HOST,
   headers: Ember.computed('auth.credentials.token', {
     get () {
       let headers = {};
