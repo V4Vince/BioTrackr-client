@@ -1,6 +1,6 @@
-## BioTrackr Ember Client
+# BioTrackr Ember Client
 
-#Synopsis
+##Synopsis
 Biotrackr lets users easily record all their health related issues all in one place. Users will be able to quickly record when they are  feeling sick and some details about it. If a user is feeling strange or finds anything that they are concerned about regarding to their health, they can record that as well. 
 
 A user doctor can then be given access to the users records with the app and the doctor can have instant access to the user’s overall health. The usr’s doctor will then be able to filter records to see trends and get a better idea of the user’s health when they visit.
