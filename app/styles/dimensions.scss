@@ -6,9 +6,20 @@ html {
 }
 
 #index-welcome{
-  margin: 50px 10px;
+  margin: 50px 10px 15px;
+  height: 300px;
+  padding: 40px;
+}
+#index-welcome > h4 {
+  margin: 20px 40px;
 }
 
+#go-to-records{
+  margin: 15px 10px;
+  height: 100px;
+  border-radius: 5px;
+  padding: 25px;
+}
 
 nav#main-navbar{
   width: 100%;
@@ -63,8 +74,8 @@ a#navbar-brand:hover{
   }
   div.show-record-page{
     padding-bottom: 150px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 .new-entry-button-container{
@@ -99,12 +110,14 @@ a#navbar-brand:hover{
   }
 }
 
-#sign-out.full-size-buttons{
+#sign-out.full-size-buttons,
+#link-to-sign-up.full-size-buttons {
   margin-top: 100px;
   margin-bottom: 200px;
   width: 70%;
   height: 80px;
 }
+
 
 .delete-entry-button{
   margin-top: 100px;
@@ -127,6 +140,8 @@ a#navbar-brand:hover{
   width: 100%;
 }
 
+
+
 .input-fields,
 .form-control{
   margin: 0px auto;
@@ -135,6 +150,7 @@ a#navbar-brand:hover{
 .ember-view.ember-text-field{
   height: 50px;
 }
+
 
 @media (max-width: 850px) {
 
@@ -196,5 +212,8 @@ a#navbar-brand:hover{
   width: 20%;
   border-radius: 15px;
 }
-
+#index-welcome.jumbotron{
+  max-width: 700px;
+  margin: 50px auto;
+}
 }

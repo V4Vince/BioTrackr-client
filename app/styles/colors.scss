@@ -11,6 +11,12 @@ body.ember-application{
 div#index-welcome{
   background-color: $main-green600;
 }
+div#go-to-records{
+  background-color: $main-green600;
+}
+#link-to-sign-up.full-size-buttons{
+  background-color: $secondary-green700;
+}
 .record-list {
   div.show-record-pills {
     background-color: $main-green600;
@@ -52,14 +58,12 @@ nav#main-navbar{
   }
 }
 
+#go-to-records > a{
+  color: white;
+}
+
 div#welcome-index
   h2,
   h4{
   color: white;
-}
-
-
-
-#index{
-  background-color: black;
 }

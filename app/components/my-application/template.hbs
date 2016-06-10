@@ -1,6 +1,10 @@
 <nav id="main-navbar">
   <div class="container">
+    {{#if isAuthenticated}}
+    {{#link-to 'record' class="link-to-record" id="records"}}Records{{/link-to}}
+    {{else}}
     <li>{{navbar-header}}</li>
+    {{/if}}
     {{#if isAuthenticated}}
     <li id="gear">{{#link-to 'option'}}⚙{{/link-to}}</li>
     {{else}}

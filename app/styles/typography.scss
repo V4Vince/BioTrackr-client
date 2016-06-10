@@ -39,3 +39,35 @@ li{
 .navbar-brand{
   font-size: 2.3em;
 }
+#link-to-sign-up.full-size-buttons > a{
+  color: white;
+}
+
+
+.new-record{
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+#go-to-records > a{
+  font-size: 3em;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  color: white;
+}
+#go-to-records a:hover{
+  text-decoration: none;
+}
+#index-welcome > h2 {
+  margin-top: 50px;
+}
+
+#records.link-to-record {
+  font-size: 2em;
+  color: white;
+}
+.link-to-record > a:hover{
+  text-decoration: none;
+  background-color: inherit;
+}
