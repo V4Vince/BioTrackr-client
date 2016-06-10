@@ -16,7 +16,12 @@ export default Ember.Component.extend({
         return entry;
       })
       //when thats done, save the item to the API
-      .then((entry) => entry.save());
+      .then((entry) => entry.save())
+      .then(() => this.set('entryParams', {}));
+    },
+
+    reset () {
+      this.set('entryParams', {});
     },
   },
 });

@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: 'div',
-  classNames: ['navbar-header'],
+  // tagName: 'div',
+  // classNames: ['navbar-header'],
 });

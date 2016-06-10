@@ -23,8 +23,13 @@ div#index-welcome{
   }
 }
 .new-entry-button{
+  background-color: $blue-800;
+}
+button.full-size-buttons.submit{
   background-color: $green-500;
 }
+
+
 
 .record-details{
   .date h5,
@@ -43,7 +48,7 @@ nav#main-navbar{
   a:hover,
   a:visited
   a:active{
-    background-color: transparent;
+    background-color: currentColor;;
   }
 }
 

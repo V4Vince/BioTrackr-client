@@ -1,36 +1,54 @@
 body.ember-application,
 .my-application-outlet,
-html{
+html {
   padding: 0;
   margin: 0;
 }
-
-
 
 #index-welcome{
   margin: 50px 10px;
 }
 
-#main-navbar{
-  height: 80px;
-  #navigation{
-    margin-top: 20px;
-  }
-}
 
 nav#main-navbar{
   width: 100%;
   border-radius: 0;
   box-shadow: 0px 1px 5px #888888;
+  height: 80px;
+  padding-top: 15px;
+  .container{
+    width: 100%;
+  }
 }
-
-.center{
+#gear > a,
+#sign-in > a {
+  position: absolute;
+  display: inline-block;
+  font-size: 3em;
+  margin: 0;
+  top: 10px;
+  right: 35px;
+  color: white;
+  a:hover{
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+#sign-in > a {
+  font-size: 1.5em;
+  top: 25px;
+}
+a#navbar-brand:hover{
+  background-color: transparent;
+}
+.center {
   text-align: center;
 }
+
 .full-size-buttons{
   margin-top: 20px;
-  height: 35px;
-  width: 60%;
+  height: 50px;
+  width: 50%;
   border-radius: 15px;
 }
 
@@ -81,12 +99,19 @@ nav#main-navbar{
   }
 }
 
+#sign-out.full-size-buttons{
+  margin-top: 100px;
+  margin-bottom: 200px;
+  width: 70%;
+  height: 80px;
+}
+
 .delete-entry-button{
-  margin-top: 50px;
+  margin-top: 100px;
   position: relative;
   border-radius: 100%;
-  height: 45px;
-  width: 45px;
+  height: 60px;
+  width: 60px;
 }
 
 .app-name{

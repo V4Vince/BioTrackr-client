@@ -1,2 +1,6 @@
-{{hamburger-menu}}
-{{#link-to "index" class="navbar-brand"}}<span class="app-name">BioTrack</span>{{/link-to}}
+{{!-- {{hamburger-menu}} --}}
+{{#if isAuthenticated}}
+{{#link-to "record"}}Records{{/link-to}}
+{{else}}
+{{#link-to "index" class="navbar-brand"}}<span class="app-name">BioTrackr</span>{{/link-to}}
+{{/if}}

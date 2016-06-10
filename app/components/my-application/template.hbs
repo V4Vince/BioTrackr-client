@@ -1,25 +1,14 @@
-<nav id="main-navbar" class=" nav navbar">
-  <div class="container-fluid">
-    {{navbar-header}}
-    <div class="collapse navbar-collapse" id="navigation">
-      <ul class="nav navbar-nav">
-        {{#if isAuthenticated}}
-        <li>{{#link-to "record"}}Your Record{{/link-to}}</li>
-        {{/if}}
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        {{#if isAuthenticated}}
-        <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
-        <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
-        {{else}}
-        <li>{{#link-to "sign-up"}}Sign Up{{/link-to}}</li>
-        <li>{{#link-to "sign-in"}}Sign In{{/link-to}}</li>
-        {{/if}}
-      </ul>
-    </div>
+<nav id="main-navbar">
+  <div class="container">
+    <li>{{navbar-header}}</li>
+    {{#if isAuthenticated}}
+    <li id="gear">{{#link-to 'option'}}⚙{{/link-to}}</li>
+    {{else}}
+    <li id="sign-in">{{#link-to 'sign-in'}}Sign In{{/link-to}}</li>
+    {{/if}}
   </div>
 </nav>
-{{!-- my-application-outlet col-md-8 col-md-offset-2 --}}
+
 <div class="my-application-outlet">
   {{outlet}}
 

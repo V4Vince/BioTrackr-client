@@ -14,6 +14,7 @@ Router.map(function () {
   this.route('record-entry', { path: '/record/:entry_id' });
   this.route('new-entry', { path: '/record/new' });
   this.route('edit');
+  this.route('option');
 });
 
 export default Router;
